@@ -14,17 +14,21 @@ for (let index = 1; index <= 20; index++) {
 console.log("==========================================")
 // print prime number
 
-for (let index = 2; index <= 100; index++) {
-    let isPrime = true;
+let num = 11;
+let isPrime = true;
 
-    for (let i = 2; i <= Math.sqrt(index); i++) {
-        if (index % i === 0) {
-            isPrime = false;
-            break;
-        }
-    }
-
-    if (isPrime) {
-        console.log(`${index} is a Prime Number`);
+for (let i = 2; i < num/2; i++) {
+    console.log(i)
+    if (num % i == 0) {
+        isPrime = false;
+        break;
     }
 }
+
+if (isPrime) {
+    console.log(`${num} is a Prime Number....`);
+} else {
+    console.log(`${num} is not a Prime Number....`);
+}
+
+// num/2 - we can cut the number to by 2 as we can divide 11 only till 5 
