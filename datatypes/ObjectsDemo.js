@@ -19,4 +19,4 @@ stdBranch : "Mechanical",
 stdBranch : "Civil"  - it considered this
 */
 
-console.log(stdDetails)
+console.log(stdDetails);
